@@ -89,13 +89,25 @@ body {
   text-overflow: ellipsis;
 }
 
-header > a,
+/* header > a,
 #root > div > h1 {
   display: inline-block;
   color: darkblue;
   font-family: 'Lumanosimo', cursive;
   font-size: 50px;
   margin: 20px;
+} */
+
+header > a,
+#root > div > h1 {
+  display: inline-block;
+  background-image: url('./adopt.png');
+  background-repeat: no-repeat;
+  width: 279px;
+  height: 76px;
+  overflow: hidden;
+  text-indent: -9999px;
+  margin: 20px 0;
 }
 
 .pet h2 {

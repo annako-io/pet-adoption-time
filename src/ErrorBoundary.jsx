@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 class ErrorBoundary extends Component {
   state = { hasError: false };
-  
+
   // When invoked, static methods are called on class and not instance of the class - ErrorBoundary.getDerivedStateFrom();
   static getDerivedStateFromError() {
     return { hasError: true };
@@ -18,7 +18,8 @@ class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return (
         <h2>
-          There was an error with this listing. <Link to="/">Click here to go back to the home page.</Link>
+          There was an error with this listing.{" "}
+          <Link to="/">Click here to go back to the home page.</Link>
         </h2>
       );
     }

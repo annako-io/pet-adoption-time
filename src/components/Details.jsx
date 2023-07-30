@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import AdoptedPetContext from "../context/AdoptedPetContext";
 import ErrorBoundary from "./ErrorBoundary";
-import fetchPet from "../helpers/fetchPet";
+import fetchPet from "../api/fetchPet";
 import Carousel from "./Carousel";
 import Modal from "./Modal";
 
